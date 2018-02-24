@@ -1,0 +1,10 @@
+ProjectAnalyze.sh:# Puts each line from every file of your project with the tag #TODO into a file todo.log
+ProjectAnalyze.sh:grep -r -e "#TODO" --exclude="todo.log" --exclude="changes.log" > todo.log
+ProjectAnalyze.sh:# Puts each line from every file of your project with the tag #TODO into a file todo.log
+ProjectAnalyze.sh:grep -r  --exclude="todo.log" --exclude="changes.log" --exclude="ProjectAnanlyze.sh" --exclude="error.log" "#TODO" >> todo.log
+ProjectAnalyze.sh:# Puts each line from every file of your project with the tag #TODO into a file todo.log
+ProjectAnalyze.sh:grep -r  --exclude="todo.log" --exclude="changes.log" --exclude="ProjectAnanlyze.sh" --exclude="error.log" "#TODO" >> todo.log
+ProjectAnalyze.sh:# Puts each line from every file of your project with the tag #TODO into a file todo.log
+ProjectAnalyze.sh:grep -r  --exclude="todo.log" --exclude="changes.log" --exclude="ProjectAnanlyze.sh" --exclude="error.log" "#TODO" >> todo.log
+ProjectAnalyze.sh:# Puts each line from every file of your project with the tag #TODO into a file todo.log
+ProjectAnalyze.sh:grep -r  --exclude="todo.log" --exclude="changes.log" --exclude="ProjectAnanlyze.sh" --exclude="error.log" "#TODO" >> todo.log
