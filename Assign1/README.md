@@ -31,5 +31,5 @@ References ::
 4. I got to know features about "$#" and other arguments from Course Instructor.
 5. Exit status "exit 0" exits with the status of the last command
 6. Used while loops instead of for loop because of certain conditions and got to know from from- http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_02.html
-7. Size of a file as taught in class aswell as from stack overlfow (https://unix.stackexchange.com/questions/16640/how-can-i-get-the-size-of-a-file-in-a-bash-script)
+7. Size of a file as taught in class by the Instructor aswell as from stack exchange (https://unix.stackexchange.com/questions/16640/how-can-i-get-the-size-of-a-file-in-a-b   ash-script)
 8. Shift command as from http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_07.html, as it was not removing argument in the beginning of the list.
