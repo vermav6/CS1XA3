@@ -38,7 +38,6 @@ ghc -fno-code "*.hs" &>> error.log  # used the hint as given in the info..
 
 # Counting the number of lines and number of words in a list of files
             
-
 number_oflines () {               # Defined a function "number_oflines".
   local file=$1   #  $1 is the first argument passed
   l=`wc -l $file | sed 's/^\([0-9]*\).*$/\1/'`   # for line count
