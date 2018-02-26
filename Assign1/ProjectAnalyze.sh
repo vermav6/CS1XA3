@@ -37,39 +37,39 @@ ghc -fno-code "*.hs" &>> error.log  # used the hint as given in the info..
 # Extra feature
 
 # Counting the number of lines and number of words in a list of files
-            
-number_oflines () {               # Defined a function "number_oflines".
+         
+file_features () {               # Defined a function "file_features".
   local file=$1   #  $1 is the first argument passed
-  l=`wc -l $file | sed 's/^\([0-9]*\).*$/\1/'`   # for line count
-  w=`wc -w $file | sed 's/^\([0-9]*\).*$/\1/'`   # for word count
+  lines=`wc -l $file | sed "s/^\([0-9]*\).*$/\1/"`   # For line count, used piping which redirects the output of a file into searching and mutuating.
+  words=`wc -w $file | sed "s/^\([0-9]*\).*$/\1/"`   # Simalarly, for word count aswell
 }
 
-if [ $# -lt 1 ]  #  $# is the total number of arguments passed in the script
+if [ $# -le 0 ]  #  $# is the total number of arguments passed in the script
 then
-  echo "Usage: $0 file ..."  #  $0 is the name of the argument passed
-  echo "You need to add a file..."
-  exit 1  # 1 is a good status to exit
+  echo "You need to add a file"
+  echo "$0 file(nothing) :: input a file to see the following features "  #  $0 is the name of the argument passed
+ 
+  exit 0  # Here 0 is the exit status
 fi
 
-echo "$0 gives us the total number of LINES and WORDS in EACH file as well as in TOTAL"
-l=0
-w=0
-a=0
-b=0
-c=0
-while [ "$*" != ""  ]   #  $* is like $1 as it gives all the arguments passed, the loop control variable is important here.
+echo "$0 gives us the total number of LINES and WORDS in EACH file as well as in TOTAL along with the SIZE of each file"
+lines=0 ; words=0 ; ran_a=0 ; ran_b=0 ; ran_c=0
+while [ "$*" != ""  ]   #  $* is like $1 but as it gives all the arguments passed, the loop control variable is important here
+                        # Could use $@ aswell but better with $* as @ instead of * passes multiple arguments in once
 do
-        number_oflines $1
-        echo "$1: contains $l lines and $w words"
-        echo size: $(du -k "$1" | cut -f 1)
-        a=$[ $a + 1 ]   # we can have any number of files
-        b=$[ $b + $l ]
-        c=$[ $c + $w ]
+        file_features $1
+        echo "$1: contains $lines lines and $words words"
+
+        echo size: $(du -h "$1" | cut -f 1)
+
+        ran_a=$[ $ran_a + 1 ] ; ran_b=$[ $ran_b + $words ] ; ran_c=$[ $ran_c + $lines ]  
+
         shift   # Built-in command which removes arguments in the beginning of the argument list
 done
-if [ $a = 1 ]
+
+if [ $ran_a = 1 ]
 then
-        echo "You passed only $a file, which contains $b lines and $c words"
+        echo "You passed only $ran_a file, which contains $ran_c lines and $ran_b words"
 else
-        echo "You passed $a files in total, which contains $b lines and $c words in total"
+        echo "You passed $ran_a files in total, which contains $ran_c lines and $ran_b words in total"
 fi
