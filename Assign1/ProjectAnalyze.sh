@@ -19,7 +19,7 @@ fi
 # 2::
 # All the uncommited changes in a file changes.log
 
-git diff  >> changes.log
+git diff  > changes.log
 echo "All the uncommited changes are there in changes.log"
 
 
