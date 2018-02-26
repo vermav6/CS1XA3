@@ -8,7 +8,7 @@ Part-1 :: Local repo up to date with the remote repo
 Part-2 :: Put all uncommited changes in a file
 
 1. Used git diff command for the uncommited changes
-2. ">>" used for appending the stuff from old to a new file changes/log
+2. ">" used for overwriting the stuff from old to a new file changes/log
 
 Part-3 :: 
 
