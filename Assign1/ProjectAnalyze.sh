@@ -53,7 +53,7 @@ then
 fi
 
 echo "$0 gives us the total number of LINES and WORDS in EACH file as well as in TOTAL along with the SIZE of each file"
-lines=0 ; words=0 ; ran_a=0 ; ran_b=0 ; ran_c=0
+lines=0 ; words=0 ; ran_a=0 ; ran_b=0 ; ran_c=0   #Initializing the varibles
 while [ "$*" != ""  ]   #  $* is like $1 but as it gives all the arguments passed, the loop control variable is important here
                         # Could use $@ aswell but better with $* as @ instead of * passes multiple arguments in once
 do
