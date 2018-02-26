@@ -59,7 +59,7 @@ while [ "$*" != ""  ]   #  $* is like $1 but as it gives all the arguments passe
 do
         file_features $1
         echo "$1: contains $lines lines and $words words"
-
+        # Gives the size of each file
         echo size: $(du -h "$1" | cut -f 1)
 
         ran_a=$[ $ran_a + 1 ] ; ran_b=$[ $ran_b + $words ] ; ran_c=$[ $ran_c + $lines ]  
