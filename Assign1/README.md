@@ -12,7 +12,7 @@ Part-2 :: Put all uncommited changes in a file
 
 Part-3 :: 
 
--> Used grep to match the pattern and got an idea from https://github.com/sharmc6 "Thanks"
+-> Used grep to match the pattern and got an idea from https://github.com/sharmc6 "Thanks fam"
  
 Part-4 ::
 
