@@ -1,4 +1,4 @@
-Assignment 1 README
+###Assignment 1 README###
 
 Part-1 :: Local repo up to date with the remote repo
 
@@ -20,4 +20,16 @@ Part-4 ::
 
 Part-5 :: Extra- feature
 
+1. This part of the script tells the user about the number of words, lines, and the size of each file that is passed as a argument.
+2. Tells us to add a file if no input is passed
 
+References ::
+
+1. It was a great learning about bash in much detail from https://ryanstutorials.net/bash-scripting-tutorial/
+2. Word and line count as taught in class and a hard time understanding about sed command from http://sed.sourceforge.net/sed1line.txt
+3. Learnt about functions, local variables and global variables(variable scoping) fromhttps://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php
+4. I got to know features about "$#" and other arguments through course instructor.
+5. Exit status "exit 0" exits with the status of the last command
+6. Used while loops instead of for loop because of certain conditions and got to know from from- http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_02.html
+7. Size of a file as taught in class aswell as from stack overlfow (https://unix.stackexchange.com/questions/16640/how-can-i-get-the-size-of-a-file-in-a-bash-script)
+8. Shift command as from http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_07.html, as it was not removing argument in the beginning of the list.
