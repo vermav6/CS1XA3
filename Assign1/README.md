@@ -23,7 +23,7 @@ Part-5 :: Extra- feature
 1. This part of the script tells the user about the number of words, lines, and the size of each file that is passed as a argument.
 2. Tells us to add a file if no input is passed
 
-References ::
+Note : References for the extra feature ::
 
 1. It was a great learning about bash in much detail from https://ryanstutorials.net/bash-scripting-tutorial/
 2. Word and line count as taught in class and a hard time understanding about sed command from http://sed.sourceforge.net/sed1line.txt
