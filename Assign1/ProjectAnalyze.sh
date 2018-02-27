@@ -26,7 +26,7 @@ echo "All the uncommited changes are there in changes.log"
 #3:: 
 # Puts each line from every file of your project with the tag #TODO into a file todo.log
 
-grep -r --exclude=todo.log "#TODO" $1 >> todo.log
+grep -r --exclude="todo.log" --exclude="changes.log" --exclude="ProjectAnalyze.sh" --exclude="error.log" "#TODO" >> todo.log
 
 #4::
 #Checks all haskell files for syntax errors and puts the results into error.log 
