@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Varun's Webpage</title>
+  <link rel="stylesheet" href="cssssw.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="Varun Verma's Personal Website">
+  <meta name="keywords" content="Varun Verma, McMaster, Engineering, Computer Scientist">
+  <meta name="author" content="Varun Verma">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-title"><i>VARUN VERMA</i></h1>
+    <center><img id="Computer Science" src="comp.png"/></center>
+    <nav class ="headerNav">
+        <a href="#" class="button">HOME</a>
+	<a href="#newPage" class="button">CONTACTS</a>
+        <a href="#projects-title" class="button">ABOUT ME</a> 
+      </nav>
+  </header>
+  
+  <div class="main-intro">
+    <h2 class="intro-text">First Year Computer Science Student, Developer, Inventor.</h2>
+  </div>
+  
+   <div class="aboutMeBG">
+  <div class="post-intro">
+    <h3 class="subtitle" id="newPage">CONTACTS</h3>
+    <div class = "me">
+	 <ul class = "list">
+  <li>vermav6@mcmaster.ca</li>
+  <li><a href="https://github.com/vermav6">github/vermav6</a></li>
+  <li><a href="https://www.linkedin.com/in/varun-verma-b9251a15a/"> linkedin.com/in/Varun-Verma</a> </li>
+  <li>647-671-2345</li>
+</ul> 
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="projects-gallery">
+    <h3 class = "subtitle" id="projects-title">ABOUT ME</h3>
+
+    <div class="row">
+      <figure class ="projects-figure">
+          
+  			<img class ="projects-photo" src = "Slide2.jpg"/>
+       
+        
+			</figure>
+    
+    <figure class ="projects-figure">
+	 
+  			<img class ="projects-photo" src = "Slide4.jpg"/>
+       
+			</figure>
+    </div>
+    
+    <div class="row">
+    <figure class ="projects-figure">
+  			<img class ="projects-photo" src = "Slide1.jpg"/>
+        
+			</figure>
+
+    <figure class ="projects-figure">
+	   	
+  			<img class ="projects-photo" src = "Slide6.jpg"/>
+	
+        
+			</figure>
+  </div>
+  
+	<div class="row">
+    <figure class ="projects-figure">
+  			<img class ="projects-photo" src = "Slide5.jpg"/>
+        
+			</figure>
+
+    <figure class ="projects-figure">
+	   	
+  			<img class ="projects-photo" src = "Slide3.jpg"/>
+	
+        
+			</figure>
+  </div>
+  
+	 
+  </div> 
+  
+  <footer>
+    <p> &copy; 2018 Varun Verma </p>
+    <a target="_blank" href = "https://www.linkedin.com/in/varun-verma-b9251a15a/">
+    	<img class = "footerImage" src= "lik.png">
+    </a>
+    <a target="_blank" href = "https://github.com/vermav6"> 
+    <img class = "footerImage" src= "git.png">
+    </a>
+	 <a target="_blank" href = "snakegame.html"> 
+    <img class = "footerImage" src= "snakelogo.jpg">
+    </a>
+	
+  </footer>
+ </body>
+</html>
