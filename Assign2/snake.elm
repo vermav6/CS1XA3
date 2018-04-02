@@ -31,9 +31,9 @@ lists list = case list of
 
 
 
---- MODEL
+-- Overall design
 
--- Positions
+-- Positions and points
 type alias Pos = (Int, Int)
 
 newPosition : Int -> Int -> Int 
@@ -124,7 +124,7 @@ eatFruit { positions, dir } fruit =
          Just head -> head == fruit
          Nothing   -> False 
 
--- Game
+-- Score and semantics
 type alias Game = { snake: Snake, fruit: Pos, window: Window.Size }
 
 init : (Game, Cmd Msg)
@@ -140,7 +140,7 @@ init =
     in (game, Cmd.batch [ Random.generate NewFruit randPost
                         , Task.perform SetSize Window.size])
 
--- UPDATE
+-- Update after picking up a fruit and when the game ends
 
 type Msg = Tick Time | ChangeDirection Direction | NewFruit Pos | SetSize Window.Size | NoOp 
 
@@ -192,7 +192,7 @@ subscriptions model =
               , Keyboard.downs direction
               , Window.resizes SetSize]
 
--- VIEW
+-- Display of the game
 
 toCoord : Pos -> (Float, Float)
 toCoord (x, y) = (width_of_snake/2 + (toFloat x - (columns/2)) * width_of_snake,
@@ -236,7 +236,7 @@ view game =
               [Element.toHtml <| display game]
 
 
--- MAIN
+-- Importing main
 
 main =
     Html.program { init = init
