@@ -18,4 +18,4 @@
 <p>Note: All the evaluation, simplification and Partial Differention are basic 1st level.</p>
 
 
- Thanks to https://github.com/siddik1 for helping me.
+ Thanks to https://github.com/siddik1 for helping me and refer him for Parsing function.
