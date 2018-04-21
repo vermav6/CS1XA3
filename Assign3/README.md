@@ -15,7 +15,7 @@
 	 </br><li>Can parse certain strings into an expression datatype (specify required format in documentation)</li>
 
 </br>
-<p>Note: All the evaluation, simplification and partDifferention are basic 1st level.</p>
+<p>Note: All the evaluation, simplification and Partial Differention are basic 1st level.</p>
 
 
- Thanks to https://github.com/siddik1 for making this possible. Cheers.
+ Thanks to https://github.com/siddik1 for helping me.
