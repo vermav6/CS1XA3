@@ -1,5 +1,5 @@
 <h1>Haskell Math Library 2018</h1>
- <a href="http://ugweb.cas.mcmaster.ca/~vermav6" target="_blank">See the Documentation Here</a>
+ <a href="http://ugweb.cas.mcmaster.ca/~vermav6/docs" target="_blank">See the Documentation Here</a>
 
 <h3>Basic Functionalities:</h3>
 	<li> An expression datatype that can encode:</li>
